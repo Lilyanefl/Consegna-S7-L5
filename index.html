@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shop Online</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./assets/style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+      <a class="navbar-brand" href="./index.html">
+        <img
+          src="./assets/586334-200.png"
+          alt="Brand Logo"
+          style="width: 50px; height: 50px"
+          class="d-inline-block align-top"
+        />
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav top">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="./back-office.html">Aggiungi Prodotto</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#top">Back to top</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container">
+      <h1 class="mt-5 mb-4 text-center text-white">
+        I nostri prodotti
+        <span
+          id="loading-indicator"
+          class="spinner-border spinner-border-sm"
+          role="status"
+          aria-hidden="true"
+          style="display: none"
+        ></span>
+      </h1>
+      <div id="product-list" class="row"></div>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
